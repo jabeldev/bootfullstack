@@ -1,0 +1,9 @@
+/*
+    Estilos específicos para la página de productos
+*/
+
+/* selector de clase: . */
+.modelocaja {
+    border-top: black 5px double;
+    
+}

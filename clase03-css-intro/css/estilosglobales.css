@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(220, 220, 207);
+}
+
+h2 { /* selector de tipo globar: todas las etiquetas */
+    text-align: center;
+}
+
+/* Selector por nombre o id*/
+#ejerciciodos {
+    text-align: left;
+}
+
+/* Asignando un nombre de grupo */
+.ejerciciotres {
+    text-align: right;
+}
+
+.botonpanel {
+    width: 80px;
+    height: 40px;
+    border-color: blue;
+    background-color: aliceblue;
+}
+
+p {
+    text-align: justify;
+    width: 600px;
+    /* Transformación de texto */
+}
+
+#minusculas {
+    text-transform: lowercase;
+    text-decoration: line-through;
+}
+
+#capital {
+    text-transform: capitalize;
+    text-decoration: overline;
+}
+
+#mayusculas {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+section div img {
+    width: 350px;
+}
