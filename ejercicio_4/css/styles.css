@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+  --primary-color: #002112;
+  --secondary-color: #27AE61;
+  --text-color: white;
+  --accent-color: #84d914;
+  --background-color: #00341d;
+  --background-secondary-color: #121212;
+  --font-family: 'Nunito', sans-serif;
+}
+/* Estilos Katherine */
+.logo {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: var(--background-color);
+  color: white;
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+}
+
+h1 {
+  margin: 0;
+}
+
+span {
+  color: var(--accent-color);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px;
+  justify-content: center;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+#hero {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  text-align: center
+}
+
+.hero-video {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner-content {
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+  font-family: var(--font-family);
+}
+
+#info {
+  background: var(--background-color);
+  color: var(--text-color);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family);
+  width: 100%;
+  padding: 30px 0;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.info-section-wrapper {
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.info-section-wrapper img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.info-section-wrapper p {
+  padding-right: 40px;
+}
+
+/* Estilos Abel */
+#products {
+  background: var(--background-secondary-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.product-card {
+  width: 300px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product-card p {
+  color: var(--text-color);
+  margin-left: 2%;
+}
+
+.product-card h3 {
+  color: var(--accent-color);
+  margin-left: 2%;
+}
+
+.product-card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* --- Sección Beneficios --- */
+#benefits {
+  background-color: var(--background-color);
+  padding: 60px 20px;
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+#benefits h2 {
+  max-width: 1000px;
+  margin: 0 auto 20px auto;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.benefits-table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.benefits-table th,
+.benefits-table td {
+  border: 1px solid var(--secondary-color);
+  padding: 15px;
+  text-align: left;
+}
+
+.benefits-table th {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.benefits-table tbody tr:nth-child(even) {
+  background-color: rgba(39, 174, 97, 0.1);
+}
+
+/* Estilos Katherine */
+
+footer {
+  background: var(--background-secondary-color);
+  color: var(--text-color);
+  display: flex;
+  padding: 15px 20px 15px 20px;
+  font-family: var(--font-family);
+}
+
+.logo-derechos {
+  width: 50px;
+  height: 50px;
+}
+
+.contacto-footer ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.contacto-footer ul li::before {
+  content: "🥦";
+  margin-right: 10px;
+}
+
+#contacto {
+  flex: 2;
+}
+
+#derechos {
+  flex: 1;
+}
+
+/* --- Media Queries (Móviles < 520px) --- */
+@media (max-width: 520px) {
+
+  .product-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  #products {
+    padding: 30px 15px;
+    gap: 30px;
+  }
+
+  #benefits {
+    padding: 40px 15px;
+  }
+
+  .benefits-table th,
+  .benefits-table td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  #hero {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .banner-content {
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    width: 70%;
+  }
+
+  .section-wrapper {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .info-section-wrapper {
+    width: 100%;
+    flex: none;
+  }
+
+  .info-section-wrapper p {
+    padding: 0 20px;
+  }
+
+  .info-section-wrapper img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: left;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+
+  #contacto,
+  derechos {
+    width: 100%;
+    flex: none;
+  }
+
+  .contacto-footer ul {
+    padding-left: 0;
+    display: inline-block;
+    text-align: left;
+  }
+}
